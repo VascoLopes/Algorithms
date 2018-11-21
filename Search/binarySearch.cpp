@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include "../Utils/vectorUtils.cpp"
+
 using namespace std;
 
 int binarySearch(vector<int> n, int l, int r, int x);
@@ -10,15 +12,7 @@ int main (){
     int searchFor = 0;
     scanf("%d", &searchFor);
 
-    //Read array size 
-    int size = 0;
-    scanf("%d", &size);
-    vector<int> n(size, 0);
-
-    //Read Array
-    for(int i = 0; i < size; i++){   
-        scanf("%d", &n[i]);
-    }
+    vector<int> n = readIntVectorFromSTDIN(); //Utils file readVector (size, (number)^size)
     
     sort(n.begin(), n.end());
 
