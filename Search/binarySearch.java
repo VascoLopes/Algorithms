@@ -22,16 +22,14 @@ public class binarySearch{
     }
 
     public static void main(String[] args){ 
-        int [] arr = new int[100];
-        for (int a = 0; a < arr.length; a++) {
-            arr[a] = (a + 1) * 10;
-        }
+        int arr[] = {0, 1, 1, 2, 3, 5, 8, 13, 21, 
+            34, 55, 89, 144, 233, 377, 610}; 
         
         /*
         Binary Search requires the array to be sorted
         In this example it already is.
         */
-        int index = binarySearch(arr, 0, arr.length, 120);
-        System.out.println("Element 120 position in array: "+index);
+        int index = binarySearch(arr, 0, arr.length, 89);
+        System.out.println("Element 89 is in position: "+index);
     }
 }
