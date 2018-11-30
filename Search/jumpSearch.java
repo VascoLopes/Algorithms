@@ -37,8 +37,12 @@ public class jumpSearch {
         int arr[] = {0, 1, 1, 2, 3, 5, 8, 13, 21, 
             34, 55, 89, 144, 233, 377, 610}; 
 
-            int index = jumpSearch(arr, arr.length, 89);
-            System.out.println("Element 89 is in position: "+index);
+        /*
+        Jump Search requires the array to be sorted
+        In this example it already is.
+        */
+        int index = jumpSearch(arr, arr.length, 89);
+        System.out.println("Element 89 is in position: "+index);
         
     }
 } 
