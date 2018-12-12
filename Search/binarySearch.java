@@ -8,7 +8,7 @@ public class binarySearch{
      * return    : (-1) if not found, (i) otherwise
      */
     public static int binarySearch(int arr[], int l, int r, int x){
-        if(l < r){
+        if(l <= r){
             int mid = l + (r-l) /2;
             if (arr[mid] == x)
                 return (mid);
